@@ -1,0 +1,6 @@
+Vertical Side bar menu responsive
+http://www.cssscript.com/responsive-sidebar-navigation-with-javascript-and-css3/
+
+File uploader
+http://valor-software.com/ng2-file-upload/
+https://github.com/valor-software/ng2-file-upload/blob/master/demo/components/file-upload/simple-demo.ts

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="margin-20">
+        <h4>Job Number</h4>
+      </div>
+      <form [formGroup]="timesheetForm" novalidate (ngSubmit)="onSubmit(timesheetForm)">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <!--workNumberFields-->
+        <div formArrayName="workNumberFields">
+          <div *ngFor="let workNumberField of timesheetForm.controls.workNumberFields.controls; let i=index" class="panel panel-default">
+            <div class="panel-heading">
+              <span>Work Number Filds {{i + 1}}</span>
+              <span class="glyphicon glyphicon-remove pull-right" *ngIf="timesheetForm.controls.workNumberFields.controls.length > 1" (click)="removeWorkNumberFields(i)"></span>
+            </div>
+            <div class="panel-body" [formGroupName]="i">
+              <ts-work-number [group]="timesheetForm.controls.workNumberFields.controls[i]"></ts-work-number>
+            </div>
+          </div>
+        </div>
+
+        <div class="margin-20">
+          <a (click)="addWorkNumberFields()" style="cursor: default">
+            Add another work number +
+          </a>
+        </div>
+
+        <div class="margin-20">
+          <button type="submit" class="btn btn-primary pull-right" [disabled]="!timesheetForm.valid">Submit</button>
+        </div>
+        <div class="clearfix"></div>
+      </form>
+    </div>
+  </div>
+</div>

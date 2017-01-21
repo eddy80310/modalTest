@@ -1,0 +1,25 @@
+<div [formGroup]="adressForm">
+    <div class="form-group col-xs-6">
+        <label>Work Number</label>
+        <input type="text" class="form-control" formControlName="workNumber">
+        <small [hidden]="adressForm.controls.workNumber.valid" class="text-danger">
+            Work Number is required
+        </small>
+    </div>
+    <div class="form-group col-xs-6">
+        <label>Equipment Number</label>
+        <input type="text" class="form-control" formControlName="equipmentNumber">
+    </div>
+
+    <div class="form-group col-xs-6">
+        <label>Start Time</label>
+        <input type="text" class="form-control" formControlName="stopTime">
+    </div>
+
+    <div class="form-group col-xs-6">
+        <label>Stop Time</label>
+        <input type="text" class="form-control" formControlName="startTime">
+    </div>
+
+
+</div>
