@@ -4,25 +4,75 @@
 <head>
   <meta charset="utf-8">
   <title>TimesheetWebApp</title>
-  <base href="/timesheet-web-app/">
+  <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <!--Responsive menu-->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet'>
-  <script src="../assets/vertical-responsive-menu/vertical-responsive-menu.min.js"></script>
-  
-  <!--I have included bootstrap 4 in styles.css already. But I needed this in order for the Address/Test Component to show in a 'card format-->
-  <!--And I needed the bootstrap 4  for the responsive to work properly.....-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-    crossorigin="anonymous">
 
 
-<link href="styles.5b3f5f7afde468fdb563.bundle.css" rel="stylesheet"></head>
+  <!--<script src="../assets/vertical-responsive-menu/vertical-responsive-menu.min.js"></script>-->
+  <script>
+    "use strict";
+
+    var tid = setInterval(function () {
+
+      if ("complete" === document.readyState) {
+
+        clearInterval(tid);
+
+        var a = document.querySelector.bind(document),
+          b = document.querySelector(".vertical_nav"),
+          c = document.querySelector(".wrapper"),
+          d = document.getElementById("js-menu")
+        //e = d.querySelectorAll(".menu--item__has_sub_menu");
+
+        window.onload = function () {
+          // your code 
+
+          a(".toggle_menu").onclick = function () {
+            b.classList.toggle("vertical_nav__opened"),
+              c.classList.toggle("toggle-content")
+          };
+        };
+
+
+        // a(".collapse_menu").onclick = function () {
+        //     b.classList.toggle("vertical_nav__minify"),
+        //         c.classList.toggle("wrapper__minify");
+
+        //     // for (var a = 0; a < e.length; a++) e[a].classList.remove("menu--subitens__opened")
+        // };
+
+        // for (var f = 0; f < e.length; f++) e[f].classList.contains("menu--item__has_sub_menu") && e[f].querySelector(".menu--link").addEventListener("click", function (a) {
+        //     for (var b = 0; b < e.length; b++) a.target.offsetParent != e[b] && e[b].classList.remove("menu--subitens__opened");
+        //     a.target.offsetParent.classList.toggle("menu--subitens__opened")
+        // }, !1)
+      }
+    }, 100);  
+  </script>
+
+
+
+
+
+
+
+
+
+
+<!--I have included bootstrap 4 in styles.css already. But I needed this in order for the Address/Test Component to show in a 'card format-->
+<!--And I needed the bootstrap 4  for the responsive to work properly.....-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+
+
+<link href="styles.3a211f889c90c0025846.bundle.css" rel="stylesheet"></head>
 
 <body>
   <app-root>Loading...</app-root>
-<script type="text/javascript" src="inline.1634f4b6a546adae9f85.bundle.js"></script><script type="text/javascript" src="main.94b48fc7fa1508870ce9.bundle.js"></script></body>
+<script type="text/javascript" src="inline.804001144c71fd74055e.bundle.js"></script><script type="text/javascript" src="vendor.a8f2099d133dc3573484.bundle.js"></script><script type="text/javascript" src="main.1511011f9db7813c221c.bundle.js"></script></body>
 
 </html>
