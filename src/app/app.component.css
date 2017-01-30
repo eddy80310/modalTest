@@ -442,6 +442,11 @@ th {
 
 
 /*--------------------------My CSS------------------------*/
+nav.vertical_nav {
+  /*To allow side menu to be in front*/
+  z-index: 9;
+}
+
 html {
   font-size: 16px;
 }
@@ -458,7 +463,7 @@ header {
   position: relative;
   /*top: 0;
   left: 0;*/
-  z-index: 999;
+  z-index: 998;
 
   width: 100%;
   height: 50px;

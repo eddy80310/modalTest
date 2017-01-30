@@ -2,52 +2,18 @@
     <button type="button" id="toggleMenu" class="toggle_menu">
       <i class="fa fa-bars"></i>
     </button>
-    <h1>Timesheet</h1>
+    <h1>Test</h1>
 </header>
 
 <nav class="vertical_nav">
     <ul id="js-menu" class="menu">
-
         <li class="menu--item">
-            <a [routerLink]="['/timesheet']" class="menu--link" title="timesheet">
-                <i class="menu--icon  fa fa-fw fa-user"></i>
-                <span class="menu--label">New Time Sheet</span>
-            </a>
-        </li>
-
-        <li class="menu--item">
-            <a [routerLink]="['/approvals']" class="menu--link" title="approvals">
+            <a [routerLink]="['']" class="menu--link" title="approvals">
                 <i class="menu--icon  fa fa-fw fa-briefcase"></i>
-                <span class="menu--label">Approvals</span>
+                <span class="menu--label">Approvals-Two</span>
             </a>
         </li>
-
-        <li class="menu--item">
-            <a [routerLink]="['/settings']" class="menu--link" title="settings">
-                <i class="menu--icon  fa fa-fw fa-cog"></i>
-                <span class="menu--label">Settings</span>
-            </a>
-        </li>
-
-        <li class="menu--item">
-            <a [routerLink]="['/import']" class="menu--link" title="import">
-                <i class="menu--icon  fa fa-fw fa-database"></i>
-                <span class="menu--label">Import</span>
-            </a>
-        </li>
-
-        <li class="menu--item">
-            <a [routerLink]="['/import-csv']" class="menu--link" title="importcsv">
-                <i class="menu--icon  fa fa-fw fa-globe"></i>
-                <span class="menu--label">Import CSV</span>
-            </a>
-        </li>
-
     </ul>
-
-
-
-
 </nav>
 
 
@@ -56,3 +22,8 @@
         <router-outlet></router-outlet>
     </section>
 </div>
+
+
+<!--ngbPopup - Heads up! The NgbModal service needs a container element with the ngbModalContainer directive. The ngbModalContainer directive marks the place in the DOM where modals are opened. Be sure to add <template ngbModalContainer></template> somewhere under your application root element.
+-->
+<template ngbModalContainer></template> 

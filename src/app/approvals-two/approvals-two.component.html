@@ -1,0 +1,8 @@
+<button 
+  class="btn btn-success btn-lg" 
+  [attr.data-target]=" '#' + approvalDetail.modalId"
+  data-toggle="modal"
+  (click)="onTestClick(approvalDetail)">
+  Test</button>
+
+<ts-approval-detail #approvalDetail></ts-approval-detail>
